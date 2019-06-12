@@ -1,0 +1,12 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: bYQSiu7KNhGC2eLcU3u1ni1bat6MJAWjq28rbLCOEhewr1h0Nnmq7lhCBgN4mT3zXLM5UTPTRYYmi0MwZzM/etS9BwsdhjwxihhG7LXCtalnMeS5g/h7d3Q+/5Lw4w5qFaRWhf9ACvaHVCbeAGO8Sdk2ntwqYroKW271rxVz9X42C8IfjKBLRNriTHaAWOky3Fk01rJP2gzTT9AXhj0j759fpvblZr+a7it5l1i+ew1yYw2YYeZ3pOAgwSZ/ly79wxPZ+3YL5ms2lWQZhj5asDmLq204O3w8P9onjm0loPBi8+TkBqv2rrD6S2xQLgWBHuS8p81/x1JzkaHDyasHz0kSgdStwZFCluJv1AbXEmcyafHo2yvwpXra+fdwXliY/GQC+B2uBp6F3U+yUIWewsTDy3mIOQboXM6UtUFTX7KPJvmI2BGEFegHqRbivEKuzse/NSPqWdWTqnr35iCY5jXweXsv2Whlh5sZxq66hkMizddQfChrPzbsSpQuXZ7n/CVTjX2W8Bmxrb3FOXBXzjE2mvtWIY7NUfmnFQQU832IEJzLBTL1lMg7A11RFYrnDCT5TG54tWCvb+aND9BreRL/yV3SGfY5BLlMy3br2IHE7R4o5bYxJV6ekdT8GavaTvG0fNElaFleiIuWjIUv8GvXv+OFSLOyqYs4MrYDdV4=
+  app: evening-atoll-72126
+  on:
+    repo: amyspeed/folksapp-frontend
