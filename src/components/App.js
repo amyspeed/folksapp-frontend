@@ -6,6 +6,7 @@ import Nav from './nav';
 import Landing from './landing/landing';
 import Dashboard from './dashboard/dashboard';
 import Folks from './folks/folks';
+import OneFolk from './folks/one-folk';
 
 import { refreshAuthToken } from '../actions/auth';
 import './App.css';
@@ -45,7 +46,8 @@ class App extends React.Component {
         <main role="main">
         <Route exact path="/" component={Landing} />
         <Route exact path="/dashboard" component={Dashboard} />
-        <Route path="/folks" component={Folks} />
+        <Route exact path="/folks" component={Folks} />
+        <Route path="/folks/:id" component={OneFolk} />
         </main>
       </div>
     );

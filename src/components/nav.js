@@ -13,11 +13,17 @@ export class Nav extends React.Component {
 
     render() {
         let logOutButton;
+        let allFolks;
         //Button appears when user is logged in
         if (this.props.loggedIn) {
             logOutButton = (
-                <button className="log-out" onClick={() => this.logOut()}>
+                <button className="nav-buttons" id="logout-btn" onClick={() => this.logOut()}>
                     Log Out
+                </button>
+            );
+            allFolks = (
+                <button className="nav-buttons" id="folks-btn">
+                    All Folks
                 </button>
             );
         }
@@ -25,6 +31,9 @@ export class Nav extends React.Component {
             <nav role="navigation">
                 <Link className="logo" to="/">
                     <h1 className="h1-logo">folksApp</h1>
+                </Link>
+                <Link to="/folks">
+                    {allFolks}
                 </Link>
                 {logOutButton}
             </nav>

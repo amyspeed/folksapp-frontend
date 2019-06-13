@@ -1,0 +1,44 @@
+nav {
+    background-color: rgb(0, 121, 94);
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: fixed;
+    width: 100%
+}
+
+.logo {
+  text-decoration: none;
+  color: rgb(245, 242, 235);
+}
+
+.h1-logo {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 7%;
+    text-align: left;
+    font-size: 35px;
+  }
+
+
+.logo:hover, .logo:focus {
+    color: black;
+}
+
+.nav-buttons {
+    background-color: white;
+    border-radius: 3px;
+    color: black;
+    position: fixed;
+    top: 20px;
+    margin-top: 4px;
+}
+
+#logout-btn {
+    right: 10px;
+}
+
+#folks-btn {
+    right: 100px;
+}

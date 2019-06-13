@@ -1,33 +1,113 @@
+html {
+  background-color:rgb(238, 237, 234);
+}
+
 .App {
+  text-align: center;
+  font-size: 15px;
+}
+
+main {
+  text-align: left;
+  margin-top: 70px;
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-size: 40px;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-size: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+img {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 10px;
+}
+
+.box {
+  background-color: white;
+  border-radius: 3px;
+  border: solid 1px gray;
+  margin-top: 0;
+  padding-top: 1px;
+  margin-bottom: 20px;
+}
+
+.log-box {
+  min-height: 400px;
+}
+
+.box-title {
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.box-content {
+  margin-left: 12%;
+}
+
+input {
+  height: 25px;
+}
+
+input, textarea {
+  margin-bottom: 7px;
+}
+
+.box-inputs {
+  width: 85%;
+}
+
+.box-buttons {
+  width: 85%;
+  margin-bottom: 20px;
+}
+
+.exit {
+  width: 100%;
+}
+
+button {
+  font-size: 18px;
+  background-color: rgb(0, 121, 94);
   color: white;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.disabled {
+  color: graytext;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#smiley {
+  width: 33.3%;
+  margin-left: 33.3%;
+  margin-right: 33.3%;
+  margin-top: 15px;
+}
+
+button:hover, button:focus {
+  background-color: rgb(255, 64, 64);
+}
+
+.folk-icon-box:hover, .folk-icon-box:focus {
+  background-color: rgb(255, 64, 64);
+}
+
+.dash-intro {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.edit {
+  padding-top: 30px;
 }
