@@ -14,7 +14,7 @@ export default class FolkIcons extends React.Component {
                     <Link to={folkURL + user.id}>
                         <div key={index} className = "box folk-icon-box">
                             <h3 className="box-title">{user.firstName} {user.lastName}</h3>
-                            <img src={require("../../images/smiley.png")} alt="profile pic" />
+                            <img src={require('../../images/'+user.image)} alt="profile pic" />
                         </div>
                     </Link>
                 </div>

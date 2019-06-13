@@ -26,13 +26,7 @@ export class Dashboard extends React.Component {
 
     render() {
         const userId = this.props.userId;
-        let profilePic;
-        if(this.props.image === "") {
-            profilePic = require("../../images/smiley.png");
-        }
-        else {
-            profilePic = "../../images/{this.props.image}";
-        }
+        console.log(this.props.image);
 
         return (
             <div className="dashboard">
@@ -45,7 +39,7 @@ export class Dashboard extends React.Component {
                         <div className = "box">
                             {this.state.editing
                                 ? <EditProfile 
-                                    profilePic={profilePic}
+                                    image={this.props.image}
                                     firstName={this.props.firstName}
                                     lastName={this.props.lastName}
                                     description={this.props.description}
@@ -53,7 +47,7 @@ export class Dashboard extends React.Component {
                                 /> 
                                 : <DisplayProfile 
                                     handleClick={this.editing}
-                                    profilePic={profilePic}
+                                    image={this.props.image}
                                     firstName={this.props.firstName}
                                     lastName={this.props.lastName}
                                     description={this.props.description}

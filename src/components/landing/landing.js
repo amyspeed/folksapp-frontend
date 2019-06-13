@@ -31,7 +31,7 @@ export function Landing(props) {
                     <div className="box log-box">
                         <h2 className="box-title">Log In</h2>
                         <LogIn />
-                        <img id="smiley" src={smiley} />
+                        <img id="smiley" src={smiley} alt="smiley face" />
                     </div>
                 </div>
             </div>

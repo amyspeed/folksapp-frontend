@@ -20,7 +20,7 @@ export default class DescriptionForm extends React.Component {
                 <textarea
                     value={this.props.description}
                     onChange={this.props.handleChange}
-                    placeholder={this.props.placeHolderDecription}
+                    placeholder={this.props.placeHolderDescription}
                     className="box-inputs"
                     name="description"
                     rows="5"

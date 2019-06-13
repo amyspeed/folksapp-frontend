@@ -2,6 +2,8 @@ import React from 'react';
 import PicForm from './profile-pic-form';
 import { connect } from 'react-redux';
 import { PutInfoByUserId } from '../../actions/folks';
+import axios from 'axios';
+import { API_BASE_URL } from '../../config';
 
 export class ProfilePic extends React.Component {
     constructor(props) {
@@ -15,7 +17,20 @@ export class ProfilePic extends React.Component {
 
     updateInputValue(event) {
         this.setState({
+            // image: event.target.files[0],
+            // loaded: 0,
             image: event.target.value
+        })
+        console.log(this.state.image)
+    }
+
+    upload = () => {
+        const data = new FormData() 
+        data.append('file', this.state.image)
+        axios
+        .post(`${API_BASE_URL}/upload`, data, {})
+        .then(res => {
+                console.log(res.statusText)
         })
     }
 
@@ -36,8 +51,8 @@ export class ProfilePic extends React.Component {
             <div>
                 <PicForm
                     image={this.state.image}
-                    placeHolderImage={this.props.image}
                     handleChange={this.updateInputValue}
+                    onClickHandler={this.upload}
                     saveData={this.putData}
                 />
             </div>

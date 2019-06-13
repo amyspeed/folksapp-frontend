@@ -11,14 +11,13 @@ export class OneFolk extends React.Component {
     render() {
         console.log(this.props.oneFolk);
         let folk = this.props.oneFolk;
-        console.log(folk);
         return (
             <div className="one-folk">
                 <div className="row">
                     <div className="col-12">
                         <div className = "box">
                             <h1>{folk.firstName} {folk.lastName}</h1>
-                            <img src={folk.profilePic} alt="profile pic" />
+                            <img src={require('../../images/'+folk.image)} alt="profile pic" />
                             <div className="box-content">
                                 <p>{folk.description}</p>
                             </div>

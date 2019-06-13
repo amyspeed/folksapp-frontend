@@ -63,7 +63,7 @@ input, textarea {
   margin-bottom: 7px;
 }
 
-.box-inputs {
+.box-inputs, select {
   width: 85%;
 }
 
