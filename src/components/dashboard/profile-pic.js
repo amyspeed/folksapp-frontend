@@ -9,7 +9,7 @@ export class ProfilePic extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            image: ""
+            image: "smiley.png"
         }
         this.updateInputValue = this.updateInputValue.bind(this);
         this.putData = this.putData.bind(this);

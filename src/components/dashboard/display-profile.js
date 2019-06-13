@@ -6,7 +6,7 @@ export default class DisplayProfile extends React.Component {
     render() {
         let image;
         if(this.props.image === undefined) {
-            image = "";
+            image = require('../../images/smiley.png');
         }
         else {
             image = require('../../images/'+this.props.image);
